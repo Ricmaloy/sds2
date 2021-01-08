@@ -1,26 +1,23 @@
 import { Product } from './types';
 
 import { MdStar, MdStarBorder } from 'react-icons/md';
+import { formatPrice } from './helpers';
 
 
 type Props = {
+    isSelected: boolean;
     product: Product;
+    onSelectProduct: (product: Product) => void;
 }
 
-function formatPrice(price: number) {
-   const formatter = new Intl.NumberFormat('pt-BR', {
-       style: 'currency',
-       currency: 'BRL',
-       minimumFractionDigits: 2
-   });
 
-   return formatter.format(price);
-}
 
-function ProductCard({product}: Props) {
+function ProductCard({product, onSelectProduct, isSelected}: Props) {
     return (
-        <div className="order-card-container">
-
+        <div 
+            className={`order-card-container ${isSelected ? 'selected' : ''}`}
+            onClick={() => onSelectProduct(product)}    
+        >
             <div className="order-card-imageContainer">
                 <img src={product.imageUri} className="order-card-image" alt={product.name}/>
             </div>

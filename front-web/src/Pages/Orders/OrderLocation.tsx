@@ -80,7 +80,10 @@ function OrderLocation({onChangeLocation}: Props) {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={address.position}>
+          <Marker 
+            position={address.position}
+            // icon={}
+          >
             <Popup>
               {address.label}
             </Popup>
