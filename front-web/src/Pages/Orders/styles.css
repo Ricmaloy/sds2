@@ -10,11 +10,11 @@
     display: flex;
     justify-content: center;
     background-color: #FFF;
-    margin-bottom: 30px;
   }
   
   .orders-steps-content {
     display: flex;
+    align-items: center;
     padding: 25px 0;
     width: 70%;
   }
@@ -53,22 +53,37 @@
   .orders-list-container {
     display: flex;
     justify-content: center;
+
+    padding: 30px 0px;
   }
   
   .orders-list-items {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 235px);
+    grid-template-columns: repeat(auto-fill, 290px);
     grid-gap: 20px 15px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .order-card-container {
+    height: 420px;
     background-color: #FFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding: 15px;
     cursor: pointer;
+
+    transition: transform .3s;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-card-textContainer{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
   }
   
   .order-card-container.selected {
@@ -79,26 +94,41 @@
   }
   
   .order-card-container:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
   
   .order-card-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
+    margin: 0px 20px 5px 20px !important;    
     letter-spacing: -0.015em;
-    color: var(--primary-color);
-    text-align: center;
+    color: var(--dark-gray-color);
   }
   
+  .order-card-rating {
+    margin: 0px 20px 5px 20px !important;    
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .order-card-rating-stars {
+    color: var(--primary-color);
+    margin-right: 2px;
+  }
+
+  .order-card-assessments {
+    font-size: 12px;
+    color: var(--dark-gray-color);
+  }
+
   .order-card-container.selected .order-card-title {
     color: #008E5B;
   }
   
   .order-card-image {
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
   }
   
@@ -106,8 +136,10 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
+    margin: 0px 20px 25px 20px !important;    
+
     letter-spacing: -0.015em;
-    color: var(--primary-color);
+    color: var(--dark-gray-color);
     text-align: left;
   }
   
@@ -118,9 +150,11 @@
   .order-card-description {
     border-top: 1px solid #E6E6E6;
     margin-top: 15px;
-    padding-top: 15px;
+    padding-top: 5px;
+    margin: 0px 20px 5px 20px !important;    
+    flex: 1;
   }
-  
+ 
   .order-card-description h3 {
     font-size: 16px;
     line-height: 22px;
@@ -130,6 +164,7 @@
   
   .order-card-description p {
     font-weight: normal;
+    margin-top: 5px;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: -0.015em;

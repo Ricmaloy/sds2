@@ -2,7 +2,7 @@ import './styles.css';
 
 import { Link } from "react-router-dom";
 
-import {ReactComponent as Logo} from './logo.svg';
+import {ReactComponent as Logo} from '../../Assets/logo.svg';
 
 function Navbar() {
     return (
