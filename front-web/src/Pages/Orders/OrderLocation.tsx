@@ -1,12 +1,27 @@
 import { useState } from "react";
+
+import MapPin from '../../Assets/mapIcon.svg';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import Leaflet from "leaflet";
 import AsyncSelect from "react-select/async";
 import { fetchLocalMapBox } from "../../API/api";
 import { OrderLocationData } from "./types";
 
+navigator.geolocation.getCurrentPosition(function (position) {
+  initialposition.lat = position.coords.latitude;
+  initialposition.lng = position.coords.longitude;
+}) 
+
+const mapPinIcon = Leaflet.icon({
+   iconUrl: MapPin,
+   iconSize: [58, 68],
+   iconAnchor: [29, 68],
+   popupAnchor: [170, 2],
+ });
+
 const initialposition = {
-  lat: -18.9110558,
-  lng: -48.26201,
+  lat: -0,
+  lng: -0,
 };
 
 type Place = {
@@ -75,6 +90,7 @@ function OrderLocation({onChangeLocation}: Props) {
             zoom={15} 
             scrollWheelZoom
             key={address.position.lat}    
+            
         >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -82,9 +98,10 @@ function OrderLocation({onChangeLocation}: Props) {
           />
           <Marker 
             position={address.position}
-            // icon={}
+            icon={mapPinIcon}
           >
             <Popup>
+              <strong>O pedido será entregue em</strong> {<br/>}
               {address.label}
             </Popup>
           </Marker>

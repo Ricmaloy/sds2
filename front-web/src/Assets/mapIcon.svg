@@ -1,0 +1,13 @@
+<svg width="189" height="177" viewBox="0 0 189 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="70" y="125.749" width="35" height="35" transform="rotate(-45 70 125.749)" fill="#FF4747"/>
+<rect width="179" height="110" rx="10" transform="matrix(-1 0 0 1 184 16)" fill="#FF4747"/>
+<path d="M135.362 104.906C128.921 104.757 123.821 99.4428 123.971 93.0369C124.121 86.6309 129.464 81.5589 135.905 81.7081C142.346 81.8574 147.445 87.1715 147.295 93.5775C147.145 99.9834 141.802 105.055 135.362 104.906Z" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M60.557 104.907C54.1145 104.907 48.8918 99.7129 48.8918 93.3052C48.8918 86.8975 54.1145 81.703 60.557 81.703C66.9995 81.703 72.2222 86.8975 72.2222 93.3052C72.2222 99.7129 66.9995 104.907 60.557 104.907Z" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M114.102 93.057C114.109 90.3064 114.661 87.5841 115.728 85.0463C116.795 82.5085 118.354 80.2051 120.318 78.2683C128.605 70.0603 142.047 70.0603 150.333 78.2683" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.6171 93.0565C38.6171 81.4458 48.0796 72.0366 59.7533 72.0366C71.427 72.0366 80.8875 81.448 80.8875 93.0586" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.9082 48.0132H44.6564V60.0264H83.9082V48.0132Z" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M138.257 72.0375L120.14 36H108.061" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M114.102 93.3055H80.8871" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.9083 60.0243C83.9083 60.0243 95.9867 105.071 120.139 60.0243" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44.6558 60.0243C44.6558 60.0243 35.5959 75.0397 38.6165 93.0574" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

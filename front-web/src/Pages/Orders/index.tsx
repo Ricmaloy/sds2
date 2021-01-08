@@ -10,6 +10,7 @@ import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
 import Footer from '../../Components/Footer';
 import { checkisSelected } from './helpers';
+import { foods, messages } from './foodsIcons';
 
 function Orders() {
 
@@ -46,9 +47,13 @@ function Orders() {
           ...orderLocation!,
           products: productsIds
         }
+        
+        const firstFood = Math.floor(Math.random() * foods.length);
+        const secondFood = Math.floor(Math.random() * foods.length);
+        const message = Math.floor(Math.random() * messages.length);
       
         saveOrder(payload).then(() => {
-          toast.error('Pedido enviado com sucesso!');
+          toast.error(`${foods[firstFood]} ${messages[message]} ${foods[secondFood]}`);
           setSelectedProducts([]);
         })
           .catch(() => {

@@ -94,6 +94,41 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 1400px) {
+  .home-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-title {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 10px !important;
+  }
+
+  .home-subtitle {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .home-btn-order {
+    height: 55px;
+    width: 205px;
+    font-size: 17px;
+  }
+
+  .home-image svg {
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .home-container {
     height: auto;
